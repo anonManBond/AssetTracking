@@ -20,10 +20,6 @@ namespace AssetTracking
             // Fetch live exchange rates from the ECB API
             LiveCurrency.FetchRates();
 
-            /*
-            // Add sample data before user input
-            AddSampleDevices(assetTrackingService);
-            */
 
             // Main application loop
             while (true)
@@ -173,21 +169,6 @@ namespace AssetTracking
             }
         }
 
-        // Add sample data before user input (1 new device gets added each time running the program)
-        /*
-        static void AddSampleDevices(AssetTrackingService assetTrackingService)
-        {
-            try
-            {
-                assetTrackingService.AddNewDevice(new Phone("iPhone", "8", "Spain", "12/29/2018", 970, "EUR"));
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error adding sample devices: {ex.Message}");
-            }
-        }
-        */
     }
 }
 
